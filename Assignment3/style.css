@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: xx-large;
+    /*border: 2px solid black;*/
+}
+.top{
+    margin-top:70px;
+    width: auto;
+}
+.top-left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+.top-right{
+    display: flex;
+    flex-wrap: wrap;   
+}
+.box{
+    width:250px;
+   border: 2px solid black;
+    border-radius: 50px;
+    padding: 20px;
+}
+.circle1{
+    border: 2px solid black;
+    padding:20px;
+    margin: 10px;
+    border-radius: 50px;
+}
+.blue{
+    background-color: aqua;
+   width: auto;
+    height:50px;
+   margin-top: 30px;
+}
+.container{
+    display:grid;
+    width: auto;
+    height: 1350px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.header{
+    background-color: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    padding-top: 150px;
+}
+.feature1{
+    background-color: orangered;
+    text-align: center;
+    padding-top: 150px;
+}
+.feature2{
+    background-color: grey;
+    text-align: center;
+    padding-top: 150px;
+}
+.feature3{
+    background-color: pink;
+    text-align: center;
+    padding-top: 150px;
+}
+.signup{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height:90px;
+    text-align: center;
+    padding-top:20px;
+}
+.content{
+    background-color: grey;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: -250px;
+    text-align: center;
+    padding-top: 200px;
+}
+@media (max-width:480px) {
+    .container{
+    display:grid;
+    width: auto;
+    height: 1350px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr); 
+    } 
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    .container{
+        display:grid;
+        width: auto;
+        height: 1350px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr); 
+        }
+        .feature1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .signup{
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+        .conntent{
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        
+}
